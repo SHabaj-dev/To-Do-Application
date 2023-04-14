@@ -26,6 +26,7 @@ class AddTask : AppCompatActivity() {
         supportActionBar?.title = "Add Task"
         window.statusBarColor = getColor(R.color.blue_light)
 
+
         binding.btnSaveTask.setOnClickListener {
             val task = binding.tvAddTask.text.toString()
             val item = ToDo(

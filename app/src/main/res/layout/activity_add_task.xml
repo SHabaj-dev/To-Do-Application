@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".AddTask">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/la_animation"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_rawRes="@raw/add_task" />
+
+
+        <EditText
+            android:id="@+id/tv_add_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/tv_background"
+            android:hint="@string/add_task"
+            android:importantForAutofill="no"
+            android:inputType="text|textMultiLine"
+            android:padding="15dp"
+            android:textColor="@color/blue_light"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:textSize="@dimen/text_size_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/la_animation" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_saveTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/button_background"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/save"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

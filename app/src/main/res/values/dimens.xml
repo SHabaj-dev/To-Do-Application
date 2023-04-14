@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_large">30sp</dimen>
+    <dimen name="padding_medium">3dp</dimen>
+    <dimen name="margin_small">20dp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="card_radius">150dp</dimen>
+    <dimen name="card_elevation_max">10dp</dimen>
+    <dimen name="card_radius_small">20dp</dimen>
+    <dimen name="margin_x_small">15dp</dimen>
+    <dimen name="padding_x_small">2dp</dimen>
+</resources>

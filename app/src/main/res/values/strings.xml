@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">To Do</string>
+    <string name="to_do">To Do</string>
+    <string name="made_with_by_shabaj_dev">Made with ❤️by SHabaj-dev</string>
+    <string name="dumm_to_do_item">dumm to do item</string>
+    <string name="delete_button">Delete Button</string>
+    <string name="add_new_task_button">Add New Task Button</string>
+    <string name="add_task">Add New Task Here</string>
+    <string name="task">Task</string>
+    <string name="save">Save</string>
+</resources>

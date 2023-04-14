@@ -29,6 +29,7 @@
             android:layout_margin="@dimen/margin_small"
             android:background="@drawable/tv_background"
             android:hint="@string/add_task"
+            android:imeOptions="actionDone"
             android:importantForAutofill="no"
             android:inputType="text|textMultiLine"
             android:padding="15dp"

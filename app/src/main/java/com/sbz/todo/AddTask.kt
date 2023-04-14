@@ -1,5 +1,6 @@
 package com.sbz.todo
 
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -20,6 +21,10 @@ class AddTask : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_add_task)
+
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(getColor(R.color.blue_light)))
+        supportActionBar?.title = "Add Task"
+        window.statusBarColor = getColor(R.color.blue_light)
 
         binding.btnSaveTask.setOnClickListener {
             val task = binding.tvAddTask.text.toString()
